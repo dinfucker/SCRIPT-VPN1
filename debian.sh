@@ -4,7 +4,7 @@ OS=`uname -m`;
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
-PLK="http://104.238.136.182:81/pvc"
+PLK="https://github.com/dinfucker/SCRIPT-VPN1"
 
 cd
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
@@ -23,7 +23,7 @@ clear
 # set repo
 wget -O /etc/apt/sources.list $PLK/sources.list.debian7
 
-wget "http://www.dotdeb.org/dotdeb.gpg"
+wget "https://raw.githubusercontent.com/dinfucker/SCRIPT-VPN1/master/dotdeb.gpg"
 
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
