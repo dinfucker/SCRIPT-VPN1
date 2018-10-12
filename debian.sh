@@ -4,7 +4,7 @@ OS=`uname -m`;
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
-PLK="https://www.lifestyle-vpn.tk/web/sk"
+PLK="https://github.com/dinfucker/SCRIPT-VPN1"
 
 cd
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
